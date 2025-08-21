@@ -1,0 +1,24 @@
+[
+  {
+    "image": "./images/sc.png",
+    "title": "login page",
+    "link": "https://fa-kohansal.github.io/loginPage/",
+    "delay":"100"
+  },
+  {
+    "image": "./images/sc.png",
+    "title": "login page",
+    "link": "https://fa-kohansal.github.io/loginPage/",
+    "delay": "200"
+  },
+{
+  "image": "./images/sc.png",
+  "title": "login page",
+  "link": "https://fa-kohansal.github.io/loginPage/",
+  "delay": "300"
+},{
+  "image": "./images/sc.png",
+  "title": "login page",
+  "link": "https://fa-kohansal.github.io/loginPage/",
+  "delay": "400"
+}]

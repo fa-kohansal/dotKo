@@ -1,0 +1,82 @@
+[
+  {
+    "image": "./images/html.png",
+    "title": "HTML5",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/css.png",
+    "title": "CSS",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/js.png",
+    "title": "JavaScript",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/ts.webp",
+    "title": "TypeScript",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/react.png",
+    "title": "ReactJS",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/tailwind-css.png",
+    "title": "Tailwind",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/bootstrap.png",
+    "title": "Bootstrap",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/jquery.png",
+    "title": "Jquery",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/redux.webp",
+    "title": "Redux",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/zustand.png",
+    "title": "Zustand",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/graphql.png",
+    "title": "GraphQL",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/git.png",
+    "title": "Git",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/restfulAPI.png",
+    "title": "RESTful API",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/json.webp",
+    "title": "Json",
+    "dataaos": "flip-right"
+  },
+  {
+    "image": "./images/responsive-design.png",
+    "title": "responsive design",
+    "dataaos": "flip-left"
+  },
+  {
+    "image": "./images/sharePoint.webp",
+    "title": "SharePoint",
+    "dataaos": "flip-right"
+  }
+]

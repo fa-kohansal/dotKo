@@ -1,0 +1,827 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ .body{
+    font-family: Arial, sans-serif;
+    width: 100%;
+}
+.wrapper{
+    width: 100% !important;
+    
+} 
+@media only screen and (min-width:992px) {
+
+.menu{
+    border-right: 1px solid #656565a5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 16%;
+    max-width: 250px;
+    height: 100vh;
+}
+.menu>ul{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 !important; 
+}
+.menu>ul>li{
+    list-style: none;
+    border-bottom: 1px solid #656565a5;
+    height: 20vh;
+    width: 100%;
+    cursor: pointer;
+}
+.menu>ul>li>a{
+    width: 100%;
+    text-decoration: none;
+    color: #656565;
+    text-transform: capitalize;
+    transition: all 300ms linear;
+}
+.menu>ul>li>a:hover{
+    background-color: #656565;
+    color: whitesmoke;
+}
+.menu>ul>li>a>i{
+    font-size: 24px;
+}
+.menu li.active a{
+    color: #DF9A10;
+    font-weight: bold;
+    background-color: #656565;
+}
+.content{
+    position: relative;
+    width: 84%;
+    right: 0;
+    left: 16%;
+    height: auto;
+}
+.paralax{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg) fixed center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slogan{
+    width: 30%;
+    position: absolute;
+    bottom: 55%;
+    left: 68%;
+    background-color: #ffffff4d;
+    border-radius: 8px;
+
+}
+.slogan>.bi-telephone-fill{
+    position: absolute;
+    right: -5%;
+    bottom: -5%;
+    cursor: pointer;
+    background-color: #DF9A10;
+}
+.about{
+    width: 100%;
+    height: auto;
+}
+.about>.aboutContent{
+    width: 60%;
+}
+.about>.aboutContent>p:nth-of-type(1){
+    font-size: 120px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.about>.aboutContent>p:nth-of-type(2){
+    font-size: 36px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.about>.aboutContent>p:nth-of-type(3){
+    font-family:'Times New Roman', Times, serif;
+    font-size: 18px;
+    padding: 8px 48px;
+    text-align: center;
+    color: whitesmoke;
+}
+.about>.aboutContent>a{
+    display: flex;
+    width: 15%;
+    height: auto;
+    padding: 8px 16px;
+    background-color: #DF9A10;
+    border-radius: 8px;
+    color: whitesmoke;
+    margin: 24px auto;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+.about>.aboutContent>a:hover{
+    background-color: #df9a10de;
+}
+
+
+.about>.aboutImg{
+    width: 40%;
+    background: url(../images/alaksiej-carankievic-jsVYWYv2lOc-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.experience{
+        width: 100%;
+    height: 90vh;
+
+}
+.experience>.expImg{
+    width: 40%;
+    background: url(../images/mikhail-fesenko-p6YWrjhmjhM-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.experience>.expContent{
+    width: 60%;
+}
+.experience>.expContent>p:nth-of-type(1){
+    width: 100%;
+    font-size: 110px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0; 
+}
+.experience>.expContent>p:nth-of-type(2){
+    font-size: 36px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.experience>.expContent>.projects{
+    display: flex;
+    flex-flow: row wrap;
+}
+.experience>.expContent>.projects>.project{
+    width: 25%;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #656565;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    position: relative;
+    
+
+
+}
+.experience>.expContent>.projects>.project>img{
+    width: 100%;
+    height: 100%;
+}
+.experience>.expContent>.projects>.project>div{
+position: absolute;
+top: 15%;
+left: 15%;
+border-radius: 8px;
+border: 1px solid #DF9A10;
+padding: 24px;
+background-color: #656565;
+opacity: 0;
+visibility: hidden;
+transition: all 300ms linear;
+
+}
+.experience>.expContent>.projects>.project:hover>div{
+    opacity: 1;
+    visibility: visible;
+}
+.experience>.expContent>.projects>.project>div>a{
+    display: flex;
+    font-size: 24px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #DF9A10;
+}
+.skills{
+    width: 100%;
+    height: auto;
+
+}
+.skills>.skillContent{
+    width: 60%;
+}
+.skills>.skillContent>p:nth-of-type(1){
+    font-size: 120px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.skills>.skillContent>div>div.skill{
+    width: 45%;
+}
+.skills>.skillImg{
+    width: 40%;
+    height: 100vh;
+    background: url(../images/elijah-grimm-RqB_IM4OTvg-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.contact{
+    width: 100%;
+    height: 40vh;
+    background: url(../images/hans-isaacson-SCvQaqyZpZQ-unsplash.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+.contact>div.contactData{
+    width: 100%;
+    height: 100%;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #2b2b2b9c;
+}
+.contact>div.contactData>div{
+    width: 20%;
+    height: 60px;
+    border-radius: 8px;
+    margin-top: 10%;
+    padding: 8px;
+    background-color: #656565d2;
+    /* position: relative; */
+}
+.contact>div.contactData>div>i{
+    font-size: 24px;
+    /* position: absolute;
+    top: 5%; */
+}
+.contact>div.contactData>div>h6{
+    line-height: 40px;
+    text-align: center;
+    margin-left: 16px;
+}
+.contact>div.contactData>div>h6>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.contact>div.contactData>div:hover i{
+    animation-name: flip;
+    animation-duration: var(--animate-duration, 800ms);
+    animation-fill-mode: both;
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+
+.menu{
+    border: none;
+    border-top: 1px solid #656565a5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    z-index: 100;
+}
+.menu>ul{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+.menu>ul>li{
+    list-style: none;
+    /* border-bottom: 1px solid #656565a5; */
+    height: 100%;
+    width: 20%;
+}
+.menu>ul>li>a{
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    text-decoration: none;
+    color: #656565;
+    text-transform: capitalize;
+    transition: all 300ms linear;
+}
+.menu>ul>li>a:hover{
+    background-color: #656565;
+    color: whitesmoke;
+}
+.menu>ul>li>a>i{
+    font-size: 20px;
+}
+.menu li.active a{
+    color: #DF9A10;
+    font-weight: bold;
+    background-color: #656565;
+}
+.content{
+    position: relative;
+    width: 100%;
+    right: 0;
+    height: auto;
+}
+.paralax{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/blake-connally-B3l0g6HLxr8-unsplash.jpg) fixed center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.slogan{
+    width: 50%;
+    position: absolute;
+    bottom: 40%;
+    left: 25%;
+    background-color: #ffffff9f;
+    border-radius: 8px;
+
+}
+.slogan>.bi-telephone-fill{
+    position: absolute;
+    right: -3%;
+    bottom: -5%;
+    cursor: pointer;
+    background-color: #DF9A10;
+}
+.about{
+    width: 100%;
+    height: auto;
+}
+.about>.aboutContent{
+    width: 75%;
+    height: 100%;
+}
+.about>.aboutContent>p:nth-of-type(1){
+    font-size: 88px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.about>.aboutContent>p:nth-of-type(2){
+    font-size: 32px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.about>.aboutContent>p:nth-of-type(3){
+    font-family:'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 8px 48px;
+    text-align: center;
+    color: whitesmoke;
+}
+.about>.aboutContent>a{
+    display: flex;
+    width: 35%;
+    height: auto;
+    padding: 8px 16px;
+    background-color: #DF9A10;
+    border-radius: 8px;
+    color: whitesmoke;
+    margin: 24px auto;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+.about>.aboutContent>a:hover{
+    background-color: #df9a10de;
+}
+.about>.aboutImg{
+    width: 25%;
+    background: url(../images/alaksiej-carankievic-jsVYWYv2lOc-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.experience{
+        width: 100%;
+    height: auto;
+
+}
+.experience>.expImg{
+    width: 25%;
+    background: url(../images/mikhail-fesenko-p6YWrjhmjhM-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.experience>.expContent{
+    width: 75%;
+    padding: 16px 8px;
+}
+.experience>.expContent>p:nth-of-type(1){
+    width: 100%;
+    font-size: 88px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0; 
+}
+.experience>.expContent>p:nth-of-type(2){
+    font-size: 32px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.experience>.expContent>.projects{
+    display: flex;
+    flex-flow: row wrap;
+}
+.experience>.expContent>.projects>.project{
+    width: 80%;
+    height: auto;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #656565;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-content: center;
+
+
+}
+.experience>.expContent>.projects>.project>img{
+    width: 20%;
+    height: 100%;
+}
+.experience>.expContent>.projects>.project>div{
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 8px;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+    padding:16px 8px;
+    transition: all 300ms linear;
+    color: whitesmoke;
+
+}
+.experience>.expContent>.projects>.project>div>a{
+    display: flex;
+    font-size: 24px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #DF9A10;
+}
+.skills{
+    width: 100%;
+    height: auto;
+
+}
+.skills>.skillContent{
+    width: 75%;
+}
+.skills>.skillContent>p:nth-of-type(1){
+    font-size: 120px;
+    color: #65656536;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.skills>.skillContent>div>div.skill{
+    width: 45%;
+}
+.skills>.skillImg{
+    width: 25%;
+    height: auto;
+    background: url(../images/elijah-grimm-RqB_IM4OTvg-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.contact{
+    width: 100%;
+    height: 50vh;
+    background: url(../images/hans-isaacson-SCvQaqyZpZQ-unsplash.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+.contact>div.contactData{
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #2b2b2b9c;
+}
+.contact>div.contactData>div{
+    width: 45%;
+    height:auto;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    background-color: #656565d2;
+    /* position: relative; */
+}
+.contact>div.contactData>div>i{
+    font-size: 24px;
+    /* position: absolute;
+    top: 5%; */
+}
+.contact>div.contactData>div>h6{
+    line-height: 40px;
+    text-align: center;
+    margin-left: 16px;
+}
+.contact>div.contactData>div>h6>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.contact>div.contactData>div:hover i{
+    animation-name: flip;
+    animation-duration: var(--animate-duration, 800ms);
+    animation-fill-mode: both;
+}
+}
+@media (max-width:767px) {
+
+ .menu{
+    border: none;
+    border-top: 1px solid #656565a5;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 64px;
+    z-index: 9999;
+}
+.menu>ul{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    height: 100%;
+    padding: 0 !important;
+}
+.menu>ul>li{
+    list-style: none;
+    /* border-bottom: 1px solid #656565a5; */
+    height: 100%;
+    width: 20%;
+}
+.menu>ul>li>a{
+    width: 100%;
+    height: 100%;
+    padding-top: 4px;
+    text-decoration: none;
+    color: #656565;
+    text-transform: capitalize;
+    transition: all 300ms linear;
+}
+.menu>ul>li>a:hover{
+    background-color: #656565;
+    color: whitesmoke;
+}
+.menu>ul>li>a>i{
+    font-size: 20px;
+}
+.menu li.active a{
+    color: #DF9A10;
+    font-weight: bold;
+    background-color: #656565;
+}
+.content{
+    position: relative;
+    width: 100%;
+    right: 0;
+    height: auto;
+}
+.paralax{
+    width: 100%;
+    height: 100vh;
+    background: url(./images/blake-connally-B3l0g6HLxr8-unsplash.jpg) fixed center center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment:scroll;
+}
+.slogan{
+    width: 70%;
+    position: absolute;
+    bottom: 45%;
+    left: 15%;
+    padding: 24px;
+    background-color: #ffffffdf;
+    border-radius: 8px;
+
+}
+.slogan>.bi-telephone-fill{
+    position: absolute;
+    font-size: 24px;
+    right: -3%;
+    bottom: -10%;
+    cursor: pointer;
+    background-color: #DF9A10;
+}
+.slogan>h1{
+    font-size: 40px;
+}
+.slogan>p{
+    font-size: 14px;
+}
+.about{
+    width: 100%;
+    height: auto;
+    background: url(../images/alaksiej-carankievic-jsVYWYv2lOc-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.about>.aboutContent{
+    width: 100%;
+    height: 100%;
+    background-color: #212529e3;
+
+}
+.about>.aboutContent>p:nth-of-type(1){
+    font-size: 72px;
+    color: #656565;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.about>.aboutContent>p:nth-of-type(2){
+    font-size: 24px;
+    text-align: center;
+    color: rgb(113, 113, 113);
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.about>.aboutContent>p:nth-of-type(3){
+    font-family:'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 8px 48px;
+    text-align: center;
+    color: whitesmoke;
+}
+.about>.aboutContent>a{
+    display: flex;
+    width: 45%;
+    height: auto;
+    padding: 8px 16px;
+    background-color: #DF9A10;
+    border-radius: 8px;
+    color: whitesmoke;
+    margin: 24px auto;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+.about>.aboutImg{
+   display: none;
+}
+.experience{
+    width: 100%;
+    height: auto;
+    background: url(../images/mikhail-fesenko-p6YWrjhmjhM-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.experience>.expImg{
+   display: none;
+}
+.experience>.expContent{
+    width: 100%;
+    background-color: #ffffff66;
+    padding: 16px 8px;
+}
+.experience>.expContent>p:nth-of-type(1){
+    width: 100%;
+    font-size: 72px;
+    color: #212529;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0; 
+}
+.experience>.expContent>p:nth-of-type(2){
+    font-size: 24px;
+    text-align: center;
+    color: #212529;
+    font-weight:bolder;
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+.experience>.expContent>.projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.experience>.expContent>.projects>.project{
+    width: 90%;
+    height: auto;
+    margin: 8px;
+    padding: 20px;
+    border: 1px solid #656565;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: start;
+    align-content: center;
+    background-color: #212529f4;
+
+
+}
+.experience>.expContent>.projects>.project>img{
+    width: 10%;
+    height: 100%;
+}
+.experience>.expContent>.projects>.project>div{
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 8px;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+    padding:16px 8px;
+    transition: all 300ms linear;
+    color: whitesmoke;
+
+}
+.experience>.expContent>.projects>.project>div>a{
+    display: flex;
+    width: 20%;
+    font-size: 24px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    color: #DF9A10;
+}
+.experience>.expContent>.projects>.project>div>p{
+    text-align: center;
+    width: 80%;
+}
+.skills{
+    width: 100%;
+    height: auto;
+    background: url(./images/elijah-grimm-RqB_IM4OTvg-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+}
+.skills>.skillContent{
+    width: 100%;
+    background-color: #212529a2;
+
+}
+.skills>.skillContent>p:nth-of-type(1){
+    font-size: 72px;
+    color: #656565;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0;
+}
+.skills>.skillContent>div>div.skill{
+    width: 47%;
+}
+.skills>.skillImg{
+   display: none;
+}
+.contact{
+    width: 100%;
+    height: 40vh;
+    background: url(./images/hans-isaacson-SCvQaqyZpZQ-unsplash.jpg) center center fixed no-repeat;
+    background-size: cover;
+}
+.contact>div.contactData{
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 16px;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #2b2b2b9c;
+}
+.contact>div.contactData>div{
+    width: 90%;
+    height:auto;
+    border-radius: 8px;
+    margin: 8px;
+    padding: 8px;
+    background-color: #656565d2;
+    /* position: relative; */
+}
+.contact>div.contactData>div>i{
+    font-size: 24px;
+    /* position: absolute;
+    top: 5%; */
+}
+.contact>div.contactData>div>h6{
+    line-height: 40px;
+    text-align: center;
+    margin-left: 16px;
+}
+.contact>div.contactData>div>h6>a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.contact>div.contactData>div:hover i{
+    animation-name: flip;
+    animation-duration: var(--animate-duration, 800ms);
+    animation-fill-mode: both;
+}
+}
